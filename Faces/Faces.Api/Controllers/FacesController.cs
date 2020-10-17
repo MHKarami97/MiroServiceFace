@@ -32,7 +32,7 @@ namespace Faces.Api.Controllers
             src.SaveImage("image.jpg",
                 new ImageEncodingParam(ImwriteFlags.JpegProgressive, 255));
 
-            var file = Path.Combine(Directory.GetCurrentDirectory(), "CascadeFile",
+            var file = Path.Combine(Directory.GetCurrentDirectory(), "CasecadFile",
                 "haarcascade_frontalface_default.xml");
 
             var faceCascade = new CascadeClassifier();
@@ -48,9 +48,9 @@ namespace Faces.Api.Controllers
 
             var i = 0;
             
-            foreach (var rect in faces)
+            foreach (var face in faces)
             {
-                var faceImage = new Mat(src, rect);
+                var faceImage = new Mat(src, face);
                 
                 faceList.Add(faceImage.ToBytes(".jpg"));
                 faceImage.SaveImage("face" + i + ".jpg",

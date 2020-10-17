@@ -11,7 +11,7 @@ namespace Faces.ConsoleTest
         static async Task Main(string[] args)
         {
             const string imagePath = @"files/img.jpg";
-            const string urlAddress = "http://localhost:5500/api/faces";
+            const string urlAddress = "http://localhost:6000/api/faces";
 
             var imgUtil = new ImageUtility();
             var bytes = imgUtil.ConvertToBytes(imagePath);
