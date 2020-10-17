@@ -8,7 +8,7 @@ namespace Faces.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class FacesController : Controller
+    public class FacesController : ControllerBase
     {
         [HttpPost]
         public async Task<List<byte[]>> ReadFaces()
