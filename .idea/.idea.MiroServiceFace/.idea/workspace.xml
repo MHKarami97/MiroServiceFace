@@ -16,7 +16,7 @@
     <list default="true" id="aed004ff-f257-4c81-9242-33cf4f70acc1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faces/Faces.Api/Faces.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Faces/Faces.Api/Faces.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faces/Faces.Api/Controllers/Faces.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Faces/Faces.Api/Controllers/Faces.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Faces/Faces.Api/CasecadFile/haarcascade_frontalface_default.xml" />
+        <option value="$PROJECT_DIR$/Faces/Faces.Api/Startup.cs" />
+        <option value="$PROJECT_DIR$/Faces/Faces.Api/Program.cs" />
+        <option value="$PROJECT_DIR$/Faces/Faces.Api/Controllers/Faces.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1j0l7AzwHFp7uT0ul3atmVqVTlE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -80,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602948725099</updated>
-      <workItem from="1602948727314" duration="462000" />
+      <workItem from="1602948727314" duration="1125000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1602948933587</created>
@@ -89,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602948933587</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="remove unwanted file, add new controller and haarcascade_frontalface_default.xml">
+      <created>1602949395587</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602949395587</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +128,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="init project" />
+    <MESSAGE value="remove unwanted file, add new controller and haarcascade_frontalface_default.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove unwanted file, add new controller and haarcascade_frontalface_default.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="222" y="75" key="IDE.errors.dialog" timestamp="1602948914766">
