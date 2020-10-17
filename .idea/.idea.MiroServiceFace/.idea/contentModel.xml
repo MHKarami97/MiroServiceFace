@@ -6,8 +6,35 @@
     <e p="C:\Users\Mohammad Hossein\AppData\Roaming\JetBrains\Rider2020.2\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\Mohammad Hossein\AppData\Roaming\JetBrains\Rider2020.2\extensions" t="IncludeRecursive" />
     <e p="H:\Project\Web\MiroServiceFace" t="IncludeFlat">
-      <e p="Faces" t="Include" />
+      <e p="Faces" t="Include">
+        <e p="Faces.Api" t="IncludeRecursive">
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="CasecadFile" t="Include">
+            <e p="haarcascade_frontalface_default.xml" t="Include" />
+          </e>
+          <e p="Controllers" t="Include">
+            <e p="WeatherForecastController.cs" t="Include" />
+          </e>
+          <e p="Faces.Api.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Faces.Api.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+          </e>
+          <e p="Startup.cs" t="Include" />
+          <e p="WeatherForecast.cs" t="Include" />
+        </e>
+      </e>
       <e p="MiroServiceFace.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>
 </project>
