@@ -14,9 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aed004ff-f257-4c81-9242-33cf4f70acc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faces/Faces.Api/Controllers/Faces.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Faces/Faces.Api/Controllers/Faces.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiroServiceFace.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MiroServiceFace.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +28,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Faces/Faces.Api/CasecadFile/haarcascade_frontalface_default.xml" />
-        <option value="$PROJECT_DIR$/Faces/Faces.Api/Startup.cs" />
         <option value="$PROJECT_DIR$/Faces/Faces.Api/Program.cs" />
         <option value="$PROJECT_DIR$/Faces/Faces.Api/Controllers/Faces.cs" />
+        <option value="$PROJECT_DIR$/Faces/Faces.Api/Controllers/FacesController.cs" />
+        <option value="$PROJECT_DIR$/Faces/Faces.Api/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/Faces/Faces.Api/Startup.cs" />
       </list>
     </option>
   </component>
@@ -51,6 +51,24 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Faces.Api">
+    <configuration name="Faces.ConsoleTest" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Faces/Faces.ConsoleTest/Faces.ConsoleTest.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="Faces.Api" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Faces/Faces.Api/Faces.Api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
@@ -90,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602948725099</updated>
-      <workItem from="1602948727314" duration="1125000" />
+      <workItem from="1602948727314" duration="1540000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1602948933587</created>
@@ -106,7 +124,28 @@
       <option name="project" value="LOCAL" />
       <updated>1602949395587</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add new method to facesController">
+      <created>1602949974487</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602949974487</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add new method to facesController">
+      <created>1602949983360</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602949983360</updated>
+    </task>
+    <task id="LOCAL-00005" summary="change startup setting">
+      <created>1602950148248</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602950148248</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,16 +168,18 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="init project" />
     <MESSAGE value="remove unwanted file, add new controller and haarcascade_frontalface_default.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unwanted file, add new controller and haarcascade_frontalface_default.xml" />
+    <MESSAGE value="add new method to facesController" />
+    <MESSAGE value="change startup setting" />
+    <option name="LAST_COMMIT_MESSAGE" value="change startup setting" />
   </component>
   <component name="WindowStateProjectService">
     <state x="222" y="75" key="IDE.errors.dialog" timestamp="1602948914766">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="222" y="75" key="IDE.errors.dialog/0.0.1280.680@0.0.1280.680" timestamp="1602948914766" />
-    <state x="234" y="72" key="Rider.ProjectTemplateDialog.Size" timestamp="1602948863920">
+    <state x="234" y="72" key="Rider.ProjectTemplateDialog.Size" timestamp="1602950282353">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="72" key="Rider.ProjectTemplateDialog.Size/0.0.1280.680@0.0.1280.680" timestamp="1602948863920" />
+    <state x="234" y="72" key="Rider.ProjectTemplateDialog.Size/0.0.1280.680@0.0.1280.680" timestamp="1602950282353" />
   </component>
 </project>
