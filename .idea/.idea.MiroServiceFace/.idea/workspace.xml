@@ -16,60 +16,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aed004ff-f257-4c81-9242-33cf4f70acc1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Web/Web/Controllers/HomeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/Models/ErrorViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/Views/Home/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/Views/Home/Privacy.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/Views/Shared/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/Views/_ViewImports.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/Views/_ViewStart.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/Web.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/js/site.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiroServiceFace.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MiroServiceFace.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Web/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Web/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +44,8 @@
         <option value="$PROJECT_DIR$/Shared/Messaging.InterfacesConstants/Class1.cs" />
         <option value="$PROJECT_DIR$/Shared/Messaging.InterfacesConstants/Constants/RabbitMqMassTransitConstants.cs" />
         <option value="$PROJECT_DIR$/Shared/Messaging.InterfacesConstants/Commands/IRegisterOrderCommand.cs" />
+        <option value="$PROJECT_DIR$/Web/Web/Services/BusService.cs" />
+        <option value="$PROJECT_DIR$/Web/Web/Startup.cs" />
       </list>
     </option>
   </component>
@@ -241,7 +191,7 @@
       <updated>1602948725099</updated>
       <workItem from="1602948727314" duration="4794000" />
       <workItem from="1603125726859" duration="604000" />
-      <workItem from="1603130791036" duration="638000" />
+      <workItem from="1603130791036" duration="1043000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1602948933587</created>
@@ -313,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603131255637</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add web mvc project">
+      <created>1603131589006</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603131589006</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +301,8 @@
     <MESSAGE value="fix bug in project" />
     <MESSAGE value="add Messaging.InterfacesConstants" />
     <MESSAGE value="add IRegisterOrderCommand.cs and RabbitMqMassTransitConstants.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="add IRegisterOrderCommand.cs and RabbitMqMassTransitConstants.cs" />
+    <MESSAGE value="add web mvc project" />
+    <option name="LAST_COMMIT_MESSAGE" value="add web mvc project" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1237" height="129" key="GridCell.Tab.0.bottom" timestamp="1602955523142">
