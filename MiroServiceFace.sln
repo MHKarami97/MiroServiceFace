@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faces.Api", "Faces\Faces.Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faces.ConsoleTest", "Faces\Faces.ConsoleTest\Faces.ConsoleTest.csproj", "{77E87499-208C-4DED-A10C-CE5A600A0FAC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{5C1E4436-6607-4D88-9ED7-E114C5560E40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messaging.InterfacesConstants", "Shared\Messaging.InterfacesConstants\Messaging.InterfacesConstants.csproj", "{62E62DA1-FB3C-4628-AE0B-9ACFC502648C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +18,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9D307228-0EBE-4D5F-9BEF-24AE01DDC0A8} = {A7658A31-6F7F-411E-9E70-CD1AAE6F542B}
 		{77E87499-208C-4DED-A10C-CE5A600A0FAC} = {A7658A31-6F7F-411E-9E70-CD1AAE6F542B}
+		{62E62DA1-FB3C-4628-AE0B-9ACFC502648C} = {5C1E4436-6607-4D88-9ED7-E114C5560E40}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9D307228-0EBE-4D5F-9BEF-24AE01DDC0A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +29,9 @@ Global
 		{77E87499-208C-4DED-A10C-CE5A600A0FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77E87499-208C-4DED-A10C-CE5A600A0FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77E87499-208C-4DED-A10C-CE5A600A0FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62E62DA1-FB3C-4628-AE0B-9ACFC502648C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62E62DA1-FB3C-4628-AE0B-9ACFC502648C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62E62DA1-FB3C-4628-AE0B-9ACFC502648C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62E62DA1-FB3C-4628-AE0B-9ACFC502648C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
