@@ -101,12 +101,17 @@
             <e p="BusService.cs" t="Include" />
           </e>
           <e p="Startup.cs" t="Include" />
+          <e p="ViewModels" t="Include">
+            <e p="OrderViewModel.cs" t="Include" />
+          </e>
           <e p="Views" t="Include">
             <e p="_ViewImports.cshtml" t="Include" />
             <e p="_ViewStart.cshtml" t="Include" />
             <e p="Home" t="Include">
               <e p="Index.cshtml" t="Include" />
               <e p="Privacy.cshtml" t="Include" />
+              <e p="RegisterOrder.cshtml" t="Include" />
+              <e p="Thanks.cshtml" t="Include" />
             </e>
             <e p="Shared" t="Include">
               <e p="_Layout.cshtml" t="Include" />
