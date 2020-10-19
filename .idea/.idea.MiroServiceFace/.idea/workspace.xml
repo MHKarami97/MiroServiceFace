@@ -15,7 +15,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aed004ff-f257-4c81-9242-33cf4f70acc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shared/Messaging.InterfacesConstants/Constants/RabbitMqMassTransitConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/Messaging.InterfacesConstants/Messaging.InterfacesConstants.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Messaging.InterfacesConstants/Messaging.InterfacesConstants.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +41,8 @@
         <option value="$PROJECT_DIR$/Faces/Faces.Api/Properties/launchSettings.json" />
         <option value="$PROJECT_DIR$/Faces/Faces.ConsoleTest/Program.cs" />
         <option value="$PROJECT_DIR$/Faces/Faces.Api/Controllers/FacesController.cs" />
+        <option value="$PROJECT_DIR$/Shared/Messaging.InterfacesConstants/Class1.cs" />
+        <option value="$PROJECT_DIR$/Shared/Messaging.InterfacesConstants/Constants/RabbitMqMassTransitConstants.cs" />
       </list>
     </option>
   </component>
@@ -154,6 +158,7 @@
       <updated>1602948725099</updated>
       <workItem from="1602948727314" duration="4794000" />
       <workItem from="1603125726859" duration="604000" />
+      <workItem from="1603130791036" duration="326000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1602948933587</created>
@@ -211,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602954535308</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add Messaging.InterfacesConstants">
+      <created>1603131049114</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603131049114</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +252,8 @@
     <MESSAGE value="add console test" />
     <MESSAGE value="fix bug" />
     <MESSAGE value="fix bug in project" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug in project" />
+    <MESSAGE value="add Messaging.InterfacesConstants" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Messaging.InterfacesConstants" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1237" height="129" key="GridCell.Tab.0.bottom" timestamp="1602955523142">
@@ -323,14 +336,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="129" key="GridCell.Tab.4.right/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
-    <state x="222" y="75" key="IDE.errors.dialog" timestamp="1602948914766">
+    <state x="222" y="75" key="IDE.errors.dialog" timestamp="1603131053785">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="222" y="75" key="IDE.errors.dialog/0.0.1280.680@0.0.1280.680" timestamp="1602948914766" />
-    <state x="234" y="72" key="Rider.ProjectTemplateDialog.Size" timestamp="1602950528501">
+    <state x="222" y="75" key="IDE.errors.dialog/0.0.1280.680@0.0.1280.680" timestamp="1603131053785" />
+    <state x="234" y="72" key="Rider.ProjectTemplateDialog.Size" timestamp="1603130975790">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="72" key="Rider.ProjectTemplateDialog.Size/0.0.1280.680@0.0.1280.680" timestamp="1602950528501" />
+    <state x="234" y="72" key="Rider.ProjectTemplateDialog.Size/0.0.1280.680@0.0.1280.680" timestamp="1603130975790" />
     <state width="646" height="346" key="XDebugger.FullValuePopup" timestamp="1602954431644">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
