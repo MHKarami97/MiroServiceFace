@@ -53,6 +53,49 @@
         </e>
       </e>
       <e p="MiroServiceFace.sln" t="IncludeFlat" />
+      <e p="Order" t="Include" />
+      <e p="Order.Api" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include" />
+        <e p="Messages" t="Include">
+          <e p="Consumers" t="Include">
+            <e p="RegisterOrderCommandConsumer.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Models" t="Include">
+          <e p="Order.cs" t="Include" />
+          <e p="OrderDetail.cs" t="Include" />
+          <e p="Status.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Order.Api.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Order.Api.csproj" t="IncludeRecursive" />
+        <e p="Persistence" t="Include">
+          <e p="IOrderRepository.cs" t="Include" />
+          <e p="Migrations" t="Include">
+            <e p="20200424080905_Initial.cs" t="Include" />
+            <e p="20200424080905_Initial.Designer.cs" t="Include" />
+            <e p="OrdersContextModelSnapshot.cs" t="Include" />
+          </e>
+          <e p="OrderRepository.cs" t="Include" />
+          <e p="OrdersContext.cs" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="BusService.cs" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="Shared" t="Include">
         <e p="Messaging.InterfacesConstants" t="IncludeRecursive">
@@ -125,6 +168,9 @@
               <e p="site.css" t="Include" />
             </e>
             <e p="favicon.ico" t="Include" />
+            <e p="image" t="Include">
+              <e p="logo.jpg" t="Include" />
+            </e>
             <e p="js" t="Include">
               <e p="site.js" t="Include" />
             </e>

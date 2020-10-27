@@ -4,6 +4,7 @@
     <projectFile>Faces/Faces.Api/Faces.Api.csproj</projectFile>
     <projectFile>Faces/Faces.ConsoleTest/Faces.ConsoleTest.csproj</projectFile>
     <projectFile>Web/Web/Web.csproj</projectFile>
+    <projectFile>Order.Api/Order.Api.csproj</projectFile>
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -16,14 +17,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aed004ff-f257-4c81-9242-33cf4f70acc1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Web/Web/ViewModels/OrderViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/Views/Home/RegisterOrder.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Web/Views/Home/Thanks.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Web/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Web/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Web/Views/Home/Index.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Web/Views/Home/Privacy.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Web/Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Web/Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MiroServiceFace/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiroServiceFace.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MiroServiceFace.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +31,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9CD23B5E-3B0C-4F80-A807-33BCFD1D82E1/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7615A221-F759-43CD-8328-A83C0A47CAF8/79/0d163fe0/IConsumer`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Order.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -55,6 +53,20 @@
         <option value="$PROJECT_DIR$/Web/Web/Properties/launchSettings.json" />
         <option value="$PROJECT_DIR$/Web/Web/ViewModels/OrderViewModel.cs" />
         <option value="$PROJECT_DIR$/Web/Web/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/Web/Web/Views/Home/Index.cshtml" />
+        <option value="$PROJECT_DIR$/Web/Web/Views/Home/Thanks.cshtml" />
+        <option value="$PROJECT_DIR$/Web/Web/Views/Home/RegisterOrder.cshtml" />
+        <option value="$PROJECT_DIR$/Order.Api/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/Order.Api/Services/BusService.cs" />
+        <option value="$PROJECT_DIR$/Order.Api/Models/Status.cs" />
+        <option value="$PROJECT_DIR$/Order.Api/Models/OrderDetail.cs" />
+        <option value="$PROJECT_DIR$/Order.Api/Models/Order.cs" />
+        <option value="$PROJECT_DIR$/Order.Api/Persistence/IOrderRepository.cs" />
+        <option value="$PROJECT_DIR$/Order.Api/Persistence/OrdersContext.cs" />
+        <option value="$PROJECT_DIR$/Order.Api/Persistence/OrderRepository.cs" />
+        <option value="$PROJECT_DIR$/Order.Api/Messages/Consumers/RegisterOrderCommandConsumer.cs" />
+        <option value="$PROJECT_DIR$/Order.Api/Startup.cs" />
+        <option value="$PROJECT_DIR$/Order.Api/Order.Api.csproj" />
       </list>
     </option>
   </component>
@@ -74,7 +86,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.Faces.ConsoleTest">
+  <component name="RunManager" selected=".NET Launch Settings Profile.Web">
     <configuration name="Faces.ConsoleTest" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -153,6 +165,36 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Order.Api" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Order.Api/Order.Api.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="Order.Api" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Order.Api: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Order.Api/Order.Api.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="Web" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Web/Web/Web.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
@@ -200,7 +242,9 @@
       <updated>1602948725099</updated>
       <workItem from="1602948727314" duration="4794000" />
       <workItem from="1603125726859" duration="604000" />
-      <workItem from="1603130791036" duration="1350000" />
+      <workItem from="1603130791036" duration="3098000" />
+      <workItem from="1603216736968" duration="855000" />
+      <workItem from="1603819322827" duration="3761000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1602948933587</created>
@@ -286,7 +330,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603131918334</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add new method and view to home controller">
+      <created>1603132583963</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603132583963</updated>
+    </task>
+    <task id="LOCAL-00014" summary="change view">
+      <created>1603132600967</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1603132600967</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,100 +377,118 @@
     <MESSAGE value="add IRegisterOrderCommand.cs and RabbitMqMassTransitConstants.cs" />
     <MESSAGE value="add web mvc project" />
     <MESSAGE value="change startup url, inject dependency in startup" />
-    <option name="LAST_COMMIT_MESSAGE" value="change startup url, inject dependency in startup" />
+    <MESSAGE value="add new method and view to home controller" />
+    <MESSAGE value="change view" />
+    <option name="LAST_COMMIT_MESSAGE" value="change view" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="129" key="GridCell.Tab.0.bottom" timestamp="1602955523142">
+    <state x="505" y="242" width="584" height="294" key="Github.ShareDialog" timestamp="1603217176075">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602955523142" />
-    <state width="1237" height="129" key="GridCell.Tab.0.center" timestamp="1602955523142">
+    <state x="505" y="242" width="584" height="294" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1603217176075" />
+    <state width="1237" height="156" key="GridCell.Tab.0.bottom" timestamp="1603822503212">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1602955523142" />
-    <state width="1237" height="129" key="GridCell.Tab.0.left" timestamp="1602955523142">
+    <state width="1237" height="156" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603822503212" />
+    <state width="1237" height="156" key="GridCell.Tab.0.center" timestamp="1603822503211">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1602955523142" />
-    <state width="1237" height="129" key="GridCell.Tab.0.right" timestamp="1602955523142">
+    <state width="1237" height="156" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1603822503211" />
+    <state width="1237" height="156" key="GridCell.Tab.0.left" timestamp="1603822503211">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602955523142" />
-    <state width="1237" height="129" key="GridCell.Tab.1.bottom" timestamp="1602955523143">
+    <state width="1237" height="156" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1603822503211" />
+    <state width="1237" height="156" key="GridCell.Tab.0.right" timestamp="1603822503212">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
-    <state width="1237" height="129" key="GridCell.Tab.1.center" timestamp="1602955523143">
+    <state width="1237" height="156" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1603822503212" />
+    <state width="1237" height="156" key="GridCell.Tab.1.bottom" timestamp="1603822503212">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
-    <state width="1237" height="129" key="GridCell.Tab.1.left" timestamp="1602955523142">
+    <state width="1237" height="156" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603822503212" />
+    <state width="1237" height="156" key="GridCell.Tab.1.center" timestamp="1603822503212">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1602955523142" />
-    <state width="1237" height="129" key="GridCell.Tab.1.right" timestamp="1602955523143">
+    <state width="1237" height="156" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1603822503212" />
+    <state width="1237" height="156" key="GridCell.Tab.1.left" timestamp="1603822503212">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
-    <state width="1237" height="129" key="GridCell.Tab.2.bottom" timestamp="1602955523143">
+    <state width="1237" height="156" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1603822503212" />
+    <state width="1237" height="156" key="GridCell.Tab.1.right" timestamp="1603822503212">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
-    <state width="1237" height="129" key="GridCell.Tab.2.center" timestamp="1602955523143">
+    <state width="1237" height="156" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1603822503212" />
+    <state width="1237" height="156" key="GridCell.Tab.2.bottom" timestamp="1603822503212">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
-    <state width="1237" height="129" key="GridCell.Tab.2.left" timestamp="1602955523143">
+    <state width="1237" height="156" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603822503212" />
+    <state width="1237" height="156" key="GridCell.Tab.2.center" timestamp="1603822503212">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
-    <state width="1237" height="129" key="GridCell.Tab.2.right" timestamp="1602955523143">
+    <state width="1237" height="156" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1603822503212" />
+    <state width="1237" height="156" key="GridCell.Tab.2.left" timestamp="1603822503212">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
-    <state width="1237" height="129" key="GridCell.Tab.3.bottom" timestamp="1602955523143">
+    <state width="1237" height="156" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1603822503212" />
+    <state width="1237" height="156" key="GridCell.Tab.2.right" timestamp="1603822503212">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
-    <state width="1237" height="129" key="GridCell.Tab.3.center" timestamp="1602955523143">
+    <state width="1237" height="156" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1603822503212" />
+    <state width="1237" height="156" key="GridCell.Tab.3.bottom" timestamp="1603822503213">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
-    <state width="1237" height="129" key="GridCell.Tab.3.left" timestamp="1602955523143">
+    <state width="1237" height="156" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603822503213" />
+    <state width="1237" height="156" key="GridCell.Tab.3.center" timestamp="1603822503213">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
-    <state width="1237" height="129" key="GridCell.Tab.3.right" timestamp="1602955523143">
+    <state width="1237" height="156" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" timestamp="1603822503213" />
+    <state width="1237" height="156" key="GridCell.Tab.3.left" timestamp="1603822503212">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
-    <state width="1237" height="129" key="GridCell.Tab.4.bottom" timestamp="1602955523143">
+    <state width="1237" height="156" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" timestamp="1603822503212" />
+    <state width="1237" height="156" key="GridCell.Tab.3.right" timestamp="1603822503213">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.4.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
-    <state width="1237" height="129" key="GridCell.Tab.4.center" timestamp="1602955523143">
+    <state width="1237" height="156" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1603822503213" />
+    <state width="1237" height="156" key="GridCell.Tab.4.bottom" timestamp="1603822503213">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.4.center/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
-    <state width="1237" height="129" key="GridCell.Tab.4.left" timestamp="1602955523143">
+    <state width="1237" height="156" key="GridCell.Tab.4.bottom/0.0.1280.680@0.0.1280.680" timestamp="1603822503213" />
+    <state width="1237" height="156" key="GridCell.Tab.4.center" timestamp="1603822503213">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.4.left/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
-    <state width="1237" height="129" key="GridCell.Tab.4.right" timestamp="1602955523143">
+    <state width="1237" height="156" key="GridCell.Tab.4.center/0.0.1280.680@0.0.1280.680" timestamp="1603822503213" />
+    <state width="1237" height="156" key="GridCell.Tab.4.left" timestamp="1603822503213">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.4.right/0.0.1280.680@0.0.1280.680" timestamp="1602955523143" />
+    <state width="1237" height="156" key="GridCell.Tab.4.left/0.0.1280.680@0.0.1280.680" timestamp="1603822503213" />
+    <state width="1237" height="156" key="GridCell.Tab.4.right" timestamp="1603822503213">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="156" key="GridCell.Tab.4.right/0.0.1280.680@0.0.1280.680" timestamp="1603822503213" />
     <state x="222" y="75" key="IDE.errors.dialog" timestamp="1603131383854">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="222" y="75" key="IDE.errors.dialog/0.0.1280.680@0.0.1280.680" timestamp="1603131383854" />
-    <state x="234" y="72" key="Rider.ProjectTemplateDialog.Size" timestamp="1603131330689">
+    <state x="272" y="117" key="MultipleFileMergeDialog" timestamp="1603819321928">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="72" key="Rider.ProjectTemplateDialog.Size/0.0.1280.680@0.0.1280.680" timestamp="1603131330689" />
+    <state x="272" y="117" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1603819321928" />
+    <state x="234" y="72" key="Rider.ProjectTemplateDialog.Size" timestamp="1603823438364">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="234" y="72" key="Rider.ProjectTemplateDialog.Size/0.0.1280.680@0.0.1280.680" timestamp="1603823438364" />
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1603216805953">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603216805953" />
     <state width="646" height="346" key="XDebugger.FullValuePopup" timestamp="1602954431644">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="646" height="346" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1602954431644" />
+    <state x="459" y="250" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603216837131">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="459" y="250" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1603216837131" />
   </component>
 </project>
