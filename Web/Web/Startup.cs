@@ -1,10 +1,11 @@
-using Web.Services;
 using MassTransit;
+using Web.Services;
+using Web.RestClients;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 
 namespace Web
 {
@@ -26,10 +27,13 @@ namespace Web
                 {
                     cfg.Host("localhost", "/", h => { });
 
-                    services.AddSingleton<IBus>(p => provider.GetRequiredService<IBusControl>());
+                    services.AddSingleton<IBus>(p => provider
+                        .GetRequiredService<IBusControl>());
 
                     services.AddSingleton<IHostedService, BusService>();
                 }));
+
+            services.AddHttpClient<IOrderManagementApi, OrderManagementApi>();
 
             services.AddControllersWithViews();
         }
