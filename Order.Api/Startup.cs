@@ -52,6 +52,16 @@ namespace Order.Api
 
             services.AddSingleton<IHostedService, BusService>();
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .SetIsOriginAllowed(host => true)
+                        .AllowCredentials());
+            });
+            
             services.AddControllers();
         }
 
@@ -61,6 +71,8 @@ namespace Order.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            
+            app.UseCors("CorsPolicy");
 
             app.UseRouting();
 
