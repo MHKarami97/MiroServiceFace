@@ -6,5 +6,6 @@
         public const string Password = "guest";
         public const string RabbitMqUri = "rabbitmq://rabbitmq/";
         public const string RegisterOrderCommandQueue = "register.order.command";
+        public const string NotificationServiceQueue = "notification.service.queue";
     }
 }
