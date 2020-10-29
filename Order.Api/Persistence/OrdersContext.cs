@@ -1,6 +1,8 @@
-﻿using Order.Api.Models;
+﻿using System;
+using Order.Api.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Polly;
 
 namespace Order.Api.Persistence
 {
@@ -17,6 +19,14 @@ namespace Order.Api.Persistence
                 .Entity<Models.Order>()
                 .Property(p => p.Status)
                 .HasConversion(converter);
+        }
+
+        public void MigrateDb()
+        {
+            Policy
+                .Handle<Exception>()
+                .WaitAndRetry(10, r => TimeSpan.FromSeconds(10))
+                .Execute(() => Database.Migrate());
         }
 
         public DbSet<Models.Order> Orders { get; set; }

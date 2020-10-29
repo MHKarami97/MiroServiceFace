@@ -26,6 +26,8 @@ namespace Order.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<Setting>(Configuration);
+
             services.AddDbContext<OrdersContext>(options => options.UseSqlServer
             (
                 Configuration.GetConnectionString("OrdersContextConnection")
@@ -100,6 +102,11 @@ namespace Order.Api
                 endpoints.MapControllers();
                 endpoints.MapHub<OrderHub>("/orderhub");
             });
+
+            using var scope = app.ApplicationServices
+                .GetRequiredService<IServiceScopeFactory>().CreateScope();
+
+            scope.ServiceProvider.GetService<OrdersContext>().MigrateDb();
         }
     }
 }

@@ -20,12 +20,14 @@ namespace Web
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<Setting>(Configuration);
+            
             services.AddMassTransit();
 
             services.AddSingleton(provider => Bus.Factory.CreateUsingRabbitMq(
                 cfg =>
                 {
-                    cfg.Host("localhost", "/", h => { });
+                    cfg.Host("rabbitmq", "/", h => { });
 
                     services.AddSingleton<IBus>(p => provider
                         .GetRequiredService<IBusControl>());

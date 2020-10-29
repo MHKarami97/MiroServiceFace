@@ -6,20 +6,20 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 
 namespace Web.RestClients
 {
     public class OrderManagementApi : IOrderManagementApi
     {
+        private readonly IOptions<Setting> _settings;
         private readonly IOrderManagementApi _restClient;
 
-        public OrderManagementApi(IConfiguration config, HttpClient httpClient)
+        public OrderManagementApi(IConfiguration config, HttpClient httpClient, IOptions<Setting> settings)
         {
-            var apiHostAndPort = config
-                .GetSection("ApiServiceLocations")
-                .GetValue<string>("OrdersApiLocation");
+            _settings = settings;
 
-            httpClient.BaseAddress = new Uri($"http://{apiHostAndPort}/api");
+            httpClient.BaseAddress = new Uri($"http://{_settings.Value.OrdersApiUrl}/api");
 
             _restClient = RestService.For<IOrderManagementApi>(httpClient);
         }

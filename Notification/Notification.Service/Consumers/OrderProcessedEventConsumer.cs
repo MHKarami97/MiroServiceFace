@@ -6,6 +6,7 @@ using EmailService;
 using System.Drawing.Imaging;
 using System.Threading.Tasks;
 using Messaging.InterfacesConstants.Events;
+using SixLabors.ImageSharp;
 
 namespace Notification.Service.Consumers
 {
@@ -39,9 +40,11 @@ namespace Notification.Service.Consumers
                 foreach (var face in facesData)
                 {
                     var ms = new MemoryStream(face);
-                    var image = Image.FromStream(ms);
-
-                    image.Save(rootFolder + "/Images/face" + j + ".jpg", ImageFormat.Jpeg);
+                    
+                    var image = Image.Load(ms.ToArray());
+                    
+                    await image.SaveAsync(rootFolder + "/Images/face" + j + ".jpg");
+                    
                     j++;
                 }
             }

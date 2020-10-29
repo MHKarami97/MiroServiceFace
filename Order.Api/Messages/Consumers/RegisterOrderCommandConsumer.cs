@@ -10,19 +10,22 @@ using System.Collections.Generic;
 using Messaging.InterfacesConstants.Events;
 using Messaging.InterfacesConstants.Commands;
 using Microsoft.AspNetCore.SignalR;
+using Microsoft.Extensions.Options;
 using Order.Api.Hubs;
 
 namespace Order.Api.Messages.Consumers
 {
     public class RegisterOrderCommandConsumer : IConsumer<IRegisterOrderCommand>
     {
+        private readonly IOptions<Setting> _settings;
         private readonly IOrderRepository _orderRepo;
         private readonly IHttpClientFactory _clientFactory;
         private readonly IHubContext<OrderHub> _hubContext;
 
         public RegisterOrderCommandConsumer(IOrderRepository orderRepo, IHttpClientFactory clientFactory,
-            IHubContext<OrderHub> hubContext)
+            IHubContext<OrderHub> hubContext, IOptions<Setting> settings)
         {
+            _settings = settings;
             _orderRepo = orderRepo;
             _hubContext = hubContext;
             _clientFactory = clientFactory;
@@ -73,7 +76,9 @@ namespace Order.Api.Messages.Consumers
             byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
 
             using (var response =
-                await client.PostAsync("http://localhost:6000/api/faces?orderId=" + orderId, byteContent))
+                await client
+                    .PostAsync(_settings.Value.FacesApiUrl +
+                               "/api/faces?orderId=" + orderId, byteContent))
             {
                 var apiResponse = await response.Content.ReadAsStringAsync();
 

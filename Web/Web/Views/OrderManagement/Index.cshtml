@@ -1,4 +1,6 @@
 ﻿@model List<Web.ViewModels.OrderViewModel>
+@using Microsoft.Extensions.Options
+@inject IOptions<Setting> settings
 @{
     ViewData["Title"] = "Orders List";
 }
@@ -38,7 +40,7 @@
     <script type="text/javascript">
              let timerId;
              const connection = new signalR.HubConnectionBuilder()
-                 .withUrl('http://localhost:4300/orderhub')
+                 .withUrl('@settings.Value.SignalRHubUrl/orderhub')
                  .configureLogging(signalR.LogLevel.Debug)
                  .withAutomaticReconnect()
                  .build();

@@ -47,7 +47,7 @@ namespace Notification.Service
 
                     services.AddSingleton(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
                     {
-                        cfg.Host("localhost", "/", h => { });
+                        cfg.Host("rabbitmq", "/", h => { });
                         cfg.ReceiveEndpoint(RabbitMqMassTransitConstants.NotificationServiceQueue, e =>
                         {
                             e.PrefetchCount = 16;
