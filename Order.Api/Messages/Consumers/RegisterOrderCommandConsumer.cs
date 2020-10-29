@@ -9,6 +9,8 @@ using System.Net.Http.Headers;
 using System.Collections.Generic;
 using Messaging.InterfacesConstants.Events;
 using Messaging.InterfacesConstants.Commands;
+using Microsoft.AspNetCore.SignalR;
+using Order.Api.Hubs;
 
 namespace Order.Api.Messages.Consumers
 {
@@ -16,10 +18,13 @@ namespace Order.Api.Messages.Consumers
     {
         private readonly IOrderRepository _orderRepo;
         private readonly IHttpClientFactory _clientFactory;
+        private readonly IHubContext<OrderHub> _hubContext;
 
-        public RegisterOrderCommandConsumer(IOrderRepository orderRepo, IHttpClientFactory clientFactory)
+        public RegisterOrderCommandConsumer(IOrderRepository orderRepo, IHttpClientFactory clientFactory,
+            IHubContext<OrderHub> hubContext)
         {
             _orderRepo = orderRepo;
+            _hubContext = hubContext;
             _clientFactory = clientFactory;
         }
 
@@ -30,6 +35,9 @@ namespace Order.Api.Messages.Consumers
                                        && result.UserEmail != null && result.ImageData != null)
             {
                 SaveOrder(result);
+
+                await _hubContext.Clients.All
+                    .SendAsync("UpdateOrders", "Order Created", result.OrderId);
 
                 var client = _clientFactory.CreateClient();
 
@@ -42,19 +50,8 @@ namespace Order.Api.Messages.Consumers
 
                 SaveOrderDetails(orderId, faces);
 
-                // var sendToUri = new Uri($"{RabbitMqMassTransitConstants.RabbitMqUri }" +
-
-                //$"{RabbitMqMassTransitConstants.NotificationServiceQueue}");
-
-                // var endPoint = await context.GetSendEndpoint(sendToUri);
-                // await endPoint.Send<IOrderProcessedEvent>(
-                //    new
-                //    {
-                //       OrderId = orderId,
-                //       result.UserEmail,
-                //       Faces= faces,
-                //       result.PictureUrl
-                //    });
+                await _hubContext.Clients.All
+                    .SendAsync("UpdateOrders", "Order Processed", orderId);
 
                 await context.Publish<IOrderProcessedEvent>(new
                 {

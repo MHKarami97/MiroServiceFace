@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Messaging.InterfacesConstants.Constants;
 using Microsoft.Extensions.DependencyInjection;
+using Order.Api.Hubs;
 using Order.Api.Messages.Consumers;
 
 namespace Order.Api
@@ -30,9 +31,8 @@ namespace Order.Api
                 Configuration.GetConnectionString("OrdersContextConnection")
             ));
 
-            services.AddHttpClient();
-
-            services.AddTransient<IOrderRepository, OrderRepository>();
+            services.AddSignalR()
+                .AddJsonProtocol(options => { options.PayloadSerializerOptions.PropertyNamingPolicy = null; });
 
             services.AddMassTransit(
                 c =>
@@ -63,8 +63,6 @@ namespace Order.Api
                 cfg.ConfigureEndpoints(provider);
             }));
 
-            services.AddSingleton<IHostedService, BusService>();
-
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
@@ -74,6 +72,12 @@ namespace Order.Api
                         .SetIsOriginAllowed(host => true)
                         .AllowCredentials());
             });
+
+            services.AddHttpClient();
+
+            services.AddTransient<IOrderRepository, OrderRepository>();
+
+            services.AddSingleton<IHostedService, BusService>();
 
             services.AddControllers();
         }
@@ -91,7 +95,11 @@ namespace Order.Api
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+                endpoints.MapHub<OrderHub>("/orderhub");
+            });
         }
     }
 }
