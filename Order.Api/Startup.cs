@@ -35,7 +35,11 @@ namespace Order.Api
             services.AddTransient<IOrderRepository, OrderRepository>();
 
             services.AddMassTransit(
-                c => { c.AddConsumer<RegisterOrderCommandConsumer>(); });
+                c =>
+                {
+                    c.AddConsumer<RegisterOrderCommandConsumer>();
+                    c.AddConsumer<OrderDispatchedEventConsumer>();
+                });
 
             services.AddSingleton(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
             {
@@ -46,7 +50,16 @@ namespace Order.Api
                     e.UseMessageRetry(x => x.Interval(2, TimeSpan.FromSeconds(10)));
                     e.Consumer<RegisterOrderCommandConsumer>(provider);
                 });
-                
+
+                cfg.ReceiveEndpoint(RabbitMqMassTransitConstants.OrderDispatchedServiceQueue, e =>
+                {
+                    e.PrefetchCount = 16;
+                    e.UseMessageRetry(x => x.Interval(2, 100));
+
+                    e.Consumer<OrderDispatchedEventConsumer>(provider);
+                    //  EndpointConvention.Map<OrderDispatchedEvent>(e.InputAddress);
+                });
+
                 cfg.ConfigureEndpoints(provider);
             }));
 
@@ -61,7 +74,7 @@ namespace Order.Api
                         .SetIsOriginAllowed(host => true)
                         .AllowCredentials());
             });
-            
+
             services.AddControllers();
         }
 
@@ -71,7 +84,7 @@ namespace Order.Api
             {
                 app.UseDeveloperExceptionPage();
             }
-            
+
             app.UseCors("CorsPolicy");
 
             app.UseRouting();

@@ -1,12 +1,13 @@
 ﻿using System;
 using MassTransit;
-using Newtonsoft.Json;
 using System.Net.Http;
+using Newtonsoft.Json;
 using Order.Api.Models;
 using Order.Api.Persistence;
 using System.Threading.Tasks;
 using System.Net.Http.Headers;
 using System.Collections.Generic;
+using Messaging.InterfacesConstants.Events;
 using Messaging.InterfacesConstants.Commands;
 
 namespace Order.Api.Messages.Consumers
@@ -40,6 +41,28 @@ namespace Order.Api.Messages.Consumers
                 var orderId = orderDetailData.Item2;
 
                 SaveOrderDetails(orderId, faces);
+
+                // var sendToUri = new Uri($"{RabbitMqMassTransitConstants.RabbitMqUri }" +
+
+                //$"{RabbitMqMassTransitConstants.NotificationServiceQueue}");
+
+                // var endPoint = await context.GetSendEndpoint(sendToUri);
+                // await endPoint.Send<IOrderProcessedEvent>(
+                //    new
+                //    {
+                //       OrderId = orderId,
+                //       result.UserEmail,
+                //       Faces= faces,
+                //       result.PictureUrl
+                //    });
+
+                await context.Publish<IOrderProcessedEvent>(new
+                {
+                    OrderId = orderId,
+                    result.UserEmail,
+                    Faces = faces,
+                    result.PictureUrl
+                });
             }
         }
 
@@ -56,6 +79,7 @@ namespace Order.Api.Messages.Consumers
                 await client.PostAsync("http://localhost:6000/api/faces?orderId=" + orderId, byteContent))
             {
                 var apiResponse = await response.Content.ReadAsStringAsync();
+
                 orderDetailData = JsonConvert
                     .DeserializeObject<Tuple<List<byte[]>, Guid>>(apiResponse);
             }
@@ -70,6 +94,7 @@ namespace Order.Api.Messages.Consumers
             if (order != null)
             {
                 order.Status = Status.Processed;
+
                 foreach (var face in faces)
                 {
                     var orderDetail = new OrderDetail
@@ -77,6 +102,7 @@ namespace Order.Api.Messages.Consumers
                         OrderId = orderId,
                         FaceData = face
                     };
+
                     order.OrderDetails.Add(orderDetail);
                 }
 

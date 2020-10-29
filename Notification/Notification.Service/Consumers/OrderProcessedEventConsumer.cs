@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Drawing.Imaging;
+using System.Drawing;
 using System.IO;
 using MassTransit;
 using EmailService;
-using System.Net.Mime;
+using System.Drawing.Imaging;
 using System.Threading.Tasks;
 using Messaging.InterfacesConstants.Events;
 
@@ -39,7 +39,7 @@ namespace Notification.Service.Consumers
                 foreach (var face in facesData)
                 {
                     var ms = new MemoryStream(face);
-                    var image = MediaTypeNames.Image.FromStream(ms);
+                    var image = Image.FromStream(ms);
 
                     image.Save(rootFolder + "/Images/face" + j + ".jpg", ImageFormat.Jpeg);
                     j++;
