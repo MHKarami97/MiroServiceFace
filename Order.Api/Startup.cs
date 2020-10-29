@@ -30,7 +30,7 @@ namespace Order.Api
 
             services.AddDbContext<OrdersContext>(options => options.UseSqlServer
             (
-                Configuration.GetConnectionString("OrdersContextConnection")
+                Configuration["OrdersContextConnection"]
             ));
 
             services.AddSignalR()
