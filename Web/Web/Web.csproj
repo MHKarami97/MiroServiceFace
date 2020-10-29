@@ -15,4 +15,8 @@
       <ProjectReference Include="..\..\Shared\Messaging.InterfacesConstants\Messaging.InterfacesConstants.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\lib\microsoft" />
+    </ItemGroup>
+
 </Project>
